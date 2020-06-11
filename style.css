@@ -133,6 +133,7 @@ header .navbar ul li a.active::before{
     font-weight: 600;
     transition: all .5s ease;
     background-color: transparent;
+    text-decoration: none;
 }
 .home .home-content .block .joinus-btn a:hover{
     background-color: white;
