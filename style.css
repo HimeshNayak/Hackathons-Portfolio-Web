@@ -16,6 +16,40 @@ body{
     flex-wrap: wrap;
 
 }
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 10px;
+    position: relative;
+}
+.section-title h1:before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+.text-center{
+    text-align: center!important;
+}
+.text-lwft{
+    text-align: left!important;
+}
+.text-right{
+    text-align: right!important;
+}
+
+
 header{
     position: absolute;
     left: 0px;
@@ -133,8 +167,77 @@ header .navbar ul li a.active::before{
     font-weight: 600;
     transition: all .5s ease;
     background-color: transparent;
+    text-decoration: none;
 }
 .home .home-content .block .joinus-btn a:hover{
     background-color: white;
     color: black;
+}
+
+
+/*Portfolios*/
+.portfolios{
+    background-color: #f5f8fd;
+    padding: 100px 0px 70px;
+
+}
+.portfolios .section-title h1::before{
+    left: 32%;
+}
+.portfolios .portfolio-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolios .portfolio-content .box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+.portfolios .portfolio-content .box::before{
+    content: '';
+    height: 2px;
+    background-color: #febd01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+}
+.portfolios .portfolio-content .box:hover::before{
+    width: 100%;
+}
+.portfolios .portfolio-content .box .icon{
+    
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.portfolios .portfolio-content .box h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+.portfolios .portfolio-content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 10px 0 0;
 }
