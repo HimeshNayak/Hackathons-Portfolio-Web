@@ -151,7 +151,7 @@ header .navbar ul li a.active::before{
     box-sizing: border-box;
 }
 
-.section-form {
+/* .section-form {
     background-color: #f9fafb;
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -160,7 +160,7 @@ header .navbar ul li a.active::before{
     min-height: 100vh;
     
     
-} 
+}  */
 .contact-container{
     background-color: #fff;
     border-radius: 5px;
