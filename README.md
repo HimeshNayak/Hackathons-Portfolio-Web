@@ -3,9 +3,9 @@
 ### To run on your system
 
 ```
+0. Download and install nodeJs on your system 
 1. Clone / Pull 
 2. In terminal of Project in VS Code run commands -
-   - npm init
    - npm install
    - cd src
    - node server.js
