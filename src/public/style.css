@@ -257,10 +257,8 @@ header .navbar ul li a.active::before{
     width: 100%;
 }
 .portfolios .portfolio-content .box .icon{
-    
-    height: 60px;
-    width: 60px;
-    background-color: #febd01;
+    background-position: center;
+    background-size: cover;
     margin: 0 auto 20px;
     border-radius: 50%;
     text-align: center;
