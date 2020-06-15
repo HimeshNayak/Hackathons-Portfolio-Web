@@ -18,7 +18,32 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+<!--******************************************** Configuration code for firebase**************************************** -->
+  // Your web app's Firebase configuration
+  // Will Update it
+  var firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();  
+	</script>
 </head>
 
 <body>
@@ -224,20 +249,20 @@
           </div>
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" name="" placeholder="Name">
+              <input type="text" class="form-control" id="fullName" placeholder="Name" autocomplete="off">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" name="" placeholder="E-mail">
+              <input type="text" class="form-control" id="fullEmail" placeholder="E-mail">
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <textarea class="form-control" placeholder="Your comment here"></textarea>
+              <textarea class="form-control" id="mess" placeholder="Your comment here"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="button text-right">
-              <a href="">Get in touch</a>
+              <a href="" id="butn">Get in touch</a>
             </div>
           </div>
         </div>
@@ -258,34 +283,34 @@
         <div class="join-form">
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" name="" placeholder="Name">
+              <input type="text" class="form-control" id="joinName" placeholder="Name">
             </div>
             <div class="col-6">
-              <input type="email" class="form-control" name="" placeholder="E-mail">
+              <input type="email" class="form-control" id="joinEmail" placeholder="E-mail">
             </div>
           </div>
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" name="" placeholder="Link to Github account">
+              <input type="text" class="form-control" id="joinGit" placeholder="Link to Github account">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" name="" placeholder="Link to Linkedin account">
+              <input type="text" class="form-control" id="joinLink" placeholder="Link to Linkedin account">
             </div>
             <div class="col-12">
-              <textarea class="form-control" name="" placeholder="Skill Set"></textarea>
+              <textarea class="form-control" id="joinSkill" placeholder="Skill Set"></textarea>
             </div>
             <div class="col-12">
-              <textarea class="form-control" name=""
+              <textarea class="form-control" id="joinExp"
                 placeholder="Any projects you have worked upon earlier (Provide link to the code too)"></textarea>
             </div>
             <div class="col-12">
-              <textarea class="form-control" name=""
+              <textarea class="form-control" id="joinIdea"
                 placeholder="If you already have an idea but collaborate as a group. We will provide you more people to work with. (A rough idea about your project)."></textarea>
             </div>
           </div>
           <div class="row">
             <div class="button text-right">
-              <a href="">Submit</a>
+              <a href="" id="joinbutn">Submit</a>
             </div>
           </div>
         </div>
@@ -317,9 +342,9 @@
     </div>
   </section>
   <!--End copyright-->
-  <script src="script.js"></script>
-
   <!--End Portfolios-->
+</script>
+<script src="script.js"></script>
 </body>
 
 </html>
