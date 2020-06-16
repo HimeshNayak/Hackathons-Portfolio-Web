@@ -18,10 +18,39 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
+
+@media all and (max-width: 700px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+} 
+
+@media all and (max-width: 500px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+} 
+
+.WebContainer{
+    width: 100%; 
+    min-width: 1000px;
+    height: auto;
+}
+
 .container{
-    max-width: 1120px;
+    max-width: 1000px;
     margin: auto;
 }
+
+
 .row{
     display: flex;
     flex-wrap: wrap;
