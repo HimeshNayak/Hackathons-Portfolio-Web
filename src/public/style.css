@@ -17,21 +17,51 @@ body{
 *{
     box-sizing: border-box;
     margin: 0;
+} 
+
+@media all and (max-width: 700px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+} 
+
+@media all and (max-width: 500px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+} 
+
+.WebContainer{
+    width: 100%; 
+    min-width: 1000px;
+    height: auto;
 }
+
 .container{
-    max-width: 1120px;
+    max-width: 1000px;
     margin: auto;
 }
+
 .row{
     display: flex;
     flex-wrap: wrap;
 
 }
+
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
+
 .section-title h1{
     display: inline-block;
     font-size: 35px;
@@ -41,6 +71,7 @@ body{
     margin: 0 0 10px;
     position: relative;
 }
+
 .section-title h1:before{
     content: '';
     left: 0;
@@ -50,12 +81,15 @@ body{
     background-color: #febd01;
     bottom: 0px;
 }
+
 .text-center{
     text-align: center!important;
 }
+
 .text-lwft{
     text-align: left!important;
 }
+
 .text-right{
     text-align: right!important;
 }
@@ -257,8 +291,10 @@ header .navbar ul li a.active::before{
     width: 100%;
 }
 .portfolios .portfolio-content .box .icon{
-    background-position: center;
-    background-size: cover;
+    
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
     margin: 0 auto 20px;
     border-radius: 50%;
     text-align: center;
@@ -436,77 +472,6 @@ header .navbar ul li a.active::before{
     box-shadow: 0px 10px 15px #e8e8e8;
 }
 .contact-us .contact-form .button a:hover{
-    background-color: black;
-    color: white;
-}
-
-/*Join-Us*/
-.join-us{
-    padding: 100px 15px;
-    background-color: #f5f8fd;
-}
-.join-us .section-title h1:before{
-    left: 30%;
-}
-.join-us .join-form{
-    background-color: white;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 50px;
-    border: 1px solid #eeeeee;
-    border-radius: 4px;
-
-}
-.join-us .join-form .text{
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-bottom: 20px;
-}
-
-.join-us .join-form .space-between{
-    justify-content: space-between;
-}
-.join-us .join-form .col-6{
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
-}
-.join-us .join-form .col-12{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.join-us .join-form .form-control{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-}
-.join-us .join-form textarea.form-control{
-    height: 140px;
-}
-.join-us .join-form .form-control::placeholder{
-    color: #838383;
-}
-.join-us .join-form .button{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.join-us .join-form .button a{
-    border-radius: 4px;
-    color: white;
-    padding: 12px 25px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .5s ease;
-    background-color: #febd01;
-    text-decoration: none;
-    box-shadow: 0px 10px 15px #e8e8e8;
-}
-.join-us .join-form .button a:hover{
     background-color: black;
     color: white;
 }
