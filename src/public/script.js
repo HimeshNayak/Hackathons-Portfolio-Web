@@ -86,7 +86,7 @@ const members = [
   const skills = [
     ['Android Studio, Java, Flutter', 'HTML, CSS, Javascript, NodeJs', 'C, C++, Python, Dart', 'Google Cloud'],
     ['Flutter', 'HTML, CSS, Bootstrap', 'C, C++, Python, Dart, R', 'Machine Learning'],
-    ['HTML, CSS, Bootstrap', 'NodeJs, MongoDB, Javascript', 'C, C++', 'Semantic-UI'],
+    ['HTML, CSS, Bootstrap, DOM', 'NodeJs, MongoDB, Javascript, JQuery', 'C, C++', 'Semantic-UI'],
     ['HTML, CSS', 'C++'],
     ['HTML, CSS, Javasript'],
     ['HTML, CSS, Bootstrap','Javascript, JQuery, NodeJs, Express', 'C, C++, Python'],
@@ -134,12 +134,31 @@ const members = [
     'dpdhruv123',
   ];
 
+//=====================
+//  PORTFOLIO CARDS
+// =====================
+var portfs = document.getElementById("portf");
+for(var i=0; i<9; i++){
+
+  portfs.innerHTML += '<div class="box">\
+            <div class="icon col">\
+              <img src="images/'+ imageMember[i]'" alt="" class="col-sm-5 col-md-5 rounded-circle">\
+            </div>\
+            <h5>'+ members[i] +'</h5>\
+            <h6>'+ membersPosition[i] +'</h6>\
+            <div class="overlay">\
+              <a href=""><span class="fa fa-address-card"></span></a>\
+              <h5>'+ skills[i] +'</h5>\
+            </div>\
+          </div>'
+}
+
 // ***************************************Adding to Firebase*******************************************************
 
 const fname= document.getElementById("fullName");
 const femail= document.getElementById("fullEmail");
 const msg= document.getElementById("mess");
-const abc= document.getElementById("butn");
+const sendContact= document.getElementById("butn");
 
 const jname= document.getElementById("joinName");
 const jemail= document.getElementById("joinEmail");
@@ -148,36 +167,4 @@ const jlink= document.getElementById("joinLink");
 const jskill= document.getElementById("joinSkill");
 const jexp= document.getElementById("joinExp");
 const jidea= document.getElementById("joinIdea");
-const defg = document.getElementById("joinbutn");
-
-//const database = firebase.database();
-const rootRef = database.ref("contactus");
-
-
-abc.addEventListener("click", (e) => {
-  e.preventDefault();
-  const autoId = rootRef.push().key
-  rootRef.child(autoId).set({
-    full_name: fname.value,
-    full_email: femail.value,
-    message: mess.value
-  })
-});
-
-const databasejoin = firebase.database();
-const rootRefjoin = databasejoin.ref("joinus");
-
-defg.addEventListener("click", (e) =>{
-  e.preventDefault();
-  const autoIdjoin= rootRefjoin.push().key
-   rootRefjoin.child(autoIdjoin).set({
-     join_name: jname.value,
-     join_email: jemail.value,
-     join_git: jgit.value,
-     join_linkedIn: jlink.value,
-     join_Skill: jskill.value,
-     join_experience: jexp.value,
-     join_idea: jidea.value,
-
-})
-});
+const sendJoin = document.getElementById("joinbutn");
