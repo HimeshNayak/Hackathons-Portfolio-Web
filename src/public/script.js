@@ -22,17 +22,8 @@ const navbar = document.querySelector(".navbar");
                     a[i].classList.remove("active");
                 }
                 this.classList.add("active")
-                    document.querySelector(".navbar").classList.toggle("show");  
-
             })
         })
-
-//ham-burger
-
-const hamBurger=document.querySelector(".ham-burger");
-hamBurger.addEventListener("click",function(){
-    document.querySelector(".navbar").classList.toggle("show");  
-})
 
 //Members Data
 const members = [
@@ -86,7 +77,7 @@ const members = [
   const skills = [
     ['Android Studio, Java, Flutter', 'HTML, CSS, Javascript, NodeJs', 'C, C++, Python, Dart', 'Google Cloud'],
     ['Flutter', 'HTML, CSS, Bootstrap', 'C, C++, Python, Dart, R', 'Machine Learning'],
-    ['HTML, CSS, Bootstrap', 'NodeJs, MongoDB, Javascript', 'C, C++', 'Semantic-UI'],
+    ['HTML, CSS, Bootstrap', 'NodeJs, MongoDB, Javascript', 'C, C++', 'Semantic-UI', 'DOM', 'JQuery'],
     ['HTML, CSS', 'C++'],
     ['HTML, CSS, Javasript'],
     ['HTML, CSS, Bootstrap','Javascript, JQuery, NodeJs, Express', 'C, C++, Python'],
@@ -133,6 +124,29 @@ const members = [
     'shubhamrawal2001',
     'dpdhruv123',
   ];
+
+// images
+// name
+// position - blah blah
+// span me skills
+// =====================
+//  PORTFOLIO CARDS
+// =====================
+var portfs = document.getElementById("portf");
+for(var i=0; i<9; i++){
+  
+  portfs.innerHTML += '<div class="box">\
+            <div class="icon col">\
+              <img src="images/sarthak.jpg" alt="" class="col-sm-5 col-md-5 rounded-circle">\
+            </div>\
+            <h5>'+ members[i] +'</h5>\
+            <p>'+ skills[i] +'</p>\
+            <div class="overlay">\
+              <a href=""><span class="fa fa-plus"></span></a>\
+              <h4>'+ members[i] +'</h4>\
+            </div>\
+          </div>'
+}
 
 // ***************************************Adding to Firebase*******************************************************
 
@@ -181,3 +195,7 @@ defg.addEventListener("click", (e) =>{
 
 })
 });
+
+
+
+
