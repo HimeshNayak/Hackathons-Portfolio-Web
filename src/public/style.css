@@ -245,7 +245,7 @@ header .navbar ul li a.active::before{
 
 .portfolios{
     background-color: #f5f8fd;
-    padding: 100px 0px 70px;
+    padding: 130px 0px 70px;
 
 }
 .portfolios .section-title h1::before{
@@ -387,7 +387,7 @@ header .navbar ul li a.active::before{
 
 /*Contact-Us*/
 .contact-us{
-    padding: 100px 15px;
+    padding-top: 130px;
     background-color: #f5f8fd;
 }
 .contact-us .section-title h1:before{
@@ -471,7 +471,7 @@ header .navbar ul li a.active::before{
 
 /*Join-Us*/
 .join-us{
-    padding: 100px 15px;
+    padding: 130px 15px;
     background-color: #f5f8fd;
 }
 .join-us .section-title h1:before{
@@ -542,7 +542,7 @@ header .navbar ul li a.active::before{
 
 /*Footer*/
 footer{
-    padding: 80px 15px;
+    padding: 60px 15px;
     background-color: #0c0c17;
 }
 footer .logo{
@@ -587,7 +587,7 @@ footer .social a:hover{
 
 /*Our works*/
 .works{
-    padding: 100px 15px;
+    padding: 130px 15px;
     background-color: white;
 }
 .works .section-title h1:before{
@@ -657,4 +657,86 @@ footer .social a:hover{
 {
     color: black;
     border-color: black;
+}
+
+
+/*Responsive*/
+
+
+.ham-burger .fa{
+    font-size: 20px;
+    height: 30px;
+    width: 35px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #eeeeee;
+}
+
+@media(max-width: 991px){
+    .home .home-content .block h1{
+    font-size: 50px;
+    }
+}
+@media(max-width: 767px){
+    .home .home-content .block h1{
+        font-size: 40px;
+        }
+    .home .home-content .block h3{
+        font-size: 25px;
+    }
+    header{
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        border-bottom: 1px solid #eeeeee;
+    }
+    header .brand-name a{
+        color: black;
+    }
+    .ham-burger .fa{
+        display: inline-block
+    }
+    .navbar{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 60px;
+        left: 0px;
+        padding: 15px;
+        border-top: 1px solid #eeeeee;
+        display: none;
+    }
+    .navbar.show{
+        display: block;
+    }
+    header .navbar ul li{
+        display: block;
+        margin-left:0;
+    }
+    header .navbar ul li a{
+        line-height: 42px;
+        color: black;
+    }
+    header .navbar ul li a::before{
+        background-color: #febd01;
+    }
+    .portfolios .portfolio-content .box{
+        background-color: white;
+        padding: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .home .home-content .block h1{
+        font-size: 30px;
+        }
+    .home .home-content .block h3{
+        font-size: 20px;
+    }
 }
