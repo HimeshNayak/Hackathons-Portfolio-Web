@@ -18,14 +18,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-
+  <link rel="stylesheet" href="User-Profile-Card-style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
 <body>
@@ -34,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="brand-name">
-          <a href="" class="logo"><img src="logob.png"></a>
+          <a href="" id="logo"><img src="images/logob.png" height="50px"></a>
         </div>
 	<div class="ham-burger">
           <i class="fa fa-bars"></i>
@@ -60,8 +54,8 @@
         <div class="home-content">
           <div class="block">
             <h6>Let's come together as</h6>
-            <h1 style="color: #febd0a">G</h1><h1>o</h1><h1 style="color: #febd0a">D</h1><h1>ev</h1><h1 style="color: #febd0a">();</h1>
-            <h3>And build projects and gain experience by working together</h3>
+            <img src="images/logobb.png" id="logoBanner">
+            <h3>Build projects and gain experience by working together</h3>
             <div class="joinus-btn">
               <a href="#join">Join as a Developer</a>
             </div>
@@ -80,12 +74,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="portfolio-content">
-          
+        <div class="portfolio-content" id="portf">
         </div>
       </div>
     </div>
   </section>
+  
+  <div class="wrapper" id="cardOverlay"></div>
 
   <!--End Portfolios-->
   <!--Start Quote-->
@@ -155,6 +150,7 @@
           <h1>Get in touch</h1>
         </div>
       </div>
+	  <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSduMR6Jn_4fcoFDkua95b_QcALgUYfZIuW2yUXqHnXYRCcNgg/formResponse">
       <div class="row">
         <div class="contact-form">
           <div class="row">
@@ -165,24 +161,25 @@
           </div>
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" id="fullName" placeholder="Name" autocomplete="off">
+              <input type="text" class="form-control" id="fullName" placeholder="Name" required="" name="entry.1313864082">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" id="fullEmail" placeholder="E-mail">
+              <input type="email" class="form-control" id="fullEmail" placeholder="E-mail" required="" name="entry.1778805816">
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <textarea class="form-control" id="mess" placeholder="Your comment here"></textarea>
+              <textarea class="form-control" id="mess" placeholder="Your comment here" required="" name="entry.1985885495"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="button text-right">
-              <a href="" id="butn">Get in touch</a>
+              <button id="submit">Get in touch</a>
             </div>
           </div>
         </div>
       </div>
+	  </form>
     </div>
   </section>
   <!--End Contact Us-->
@@ -195,42 +192,44 @@
           <h1>Join Us</h1>
         </div>
       </div>
+	  <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScixfk5gy61t2EAex_chiqr25afxIe7JXmdtn-VBxHjm-St1Q/formResponse">
       <div class="row">
         <div class="join-form">
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" id="joinName" placeholder="Name">
+              <input type="text" class="form-control" id="joinName" placeholder="Name" name="entry.1840683356" required="">
             </div>
             <div class="col-6">
-              <input type="email" class="form-control" id="joinEmail" placeholder="E-mail">
+              <input type="email" class="form-control" id="joinEmail" placeholder="E-mail" name="entry.1668391196" required="">
             </div>
           </div>
           <div class="row space-between">
             <div class="col-6">
-              <input type="text" class="form-control" id="joinGit" placeholder="Link to Github account">
+              <input type="text" class="form-control" id="joinGit" placeholder="Link to Github account" name="entry.1072949904">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" id="joinLink" placeholder="Link to Linkedin account">
+              <input type="text" class="form-control" id="joinLink" placeholder="Link to Linkedin account" name="entry.1072949904">
             </div>
             <div class="col-12">
-              <textarea class="form-control" id="joinSkill" placeholder="Skill Set"></textarea>
+              <textarea class="form-control" id="joinSkill" placeholder="Skill Set" name="entry.1196312592"></textarea>
             </div>
             <div class="col-12">
-              <textarea class="form-control" id="joinExp"
-                placeholder="Any projects you have worked upon earlier (Provide link to the code too)"></textarea>
+              <textarea class="form-control" id="joinExp" name="entry.1196312592"
+                placeholder="Any projects you have worked upon earlier (Provide link to the code too)" name="entry.925209188"></textarea>
             </div>
             <div class="col-12">
-              <textarea class="form-control" id="joinIdea"
+              <textarea class="form-control" id="joinIdea" name="entry.2041028547"
                 placeholder="If you already have an idea but collaborate as a group. We will provide you more people to work with. (A rough idea about your project)."></textarea>
             </div>
           </div>
           <div class="row">
             <div class="button text-right">
-              <a href="" id="joinbutn">Submit</a>
+              <button id="submit">Submit</a>
             </div>
           </div>
         </div>
       </div>
+	  </form>
     </div>
   </section>
   <!--End Join Us-->
@@ -238,14 +237,14 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="logo">
-          Ghosts
+        <div class="logoFooter">
+          <img src="images/logob.png" height="50px">
         </div>
         <div class="social">
-          <a href=""><i class="fa fa-facebook"></i></a>
-          <a href=""><i class="fa fa-twitter"></i></a>
-          <a href=""><i class="fa fa-instagram"></i></a>
-          <a href=""><i class="fa fa-linkedin"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>

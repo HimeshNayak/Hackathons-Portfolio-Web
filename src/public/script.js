@@ -3,11 +3,11 @@ window.onscroll=function(){
 
     if(window.innerWidth>991){
         if(docScrollTop>100){
-            document.querySelector("header").classList.add("fixed")
+            document.querySelector("header").classList.add("fixed");
         }
         else{
-            document.querySelector("header").classList.remove("fixed")
-
+            document.querySelector("header").classList.remove("fixed");
+			
         }
     }
 }
@@ -36,10 +36,10 @@ hamBurger.addEventListener("click",function(){
 
 //Members Data
 const members = [
-    'Himesh Nayak',
+    'Sarhtak Khandelwal',    
+	'Himesh Nayak',
     'Haresh Nayak',
     'Parv Sharma',
-    'Sarhtak Kh.',
     'Kshitij Garg',
     'Harsh Goyal',
     'Rahul Gandhi',
@@ -48,9 +48,9 @@ const members = [
   ];
 
   const membersPosition = [
-    'App Developer',
-    'ML Enthusiast',
     'Web Developer',
+	'App Developer',
+    'ML Enthusiast',
     'Web Developer',
     'Web Developer',
     'Web Developer',
@@ -60,10 +60,10 @@ const members = [
   ];
 
   const imageMember = [
-    'himesh.jpg',
+    'sarthak.jpg',
+	'himesh.jpg',
     'haresh.jpg',
     'parv.png',
-    'sarthak.png',
     'kshitij.png',
     'harsh.png',
     'rahul.png',
@@ -72,37 +72,37 @@ const members = [
   ];
 
   const skillsHead = [
-    ['App Development','Full Stack Web Development', 'Programming languages', 'Others'],
-    ['App Development', 'Web Development', 'Programming Languages', 'Others',],
-    ['Frontend Web Development','Backend Web Development', 'Programming languages', 'Others'],
-    ['Frontend Web Development', 'Programming Languages'],
-    ['Frontend Web Development'],
-    ['Frontend Web Development', 'Backend Web Development', 'Programming Languages'],
-    ['Frontend Web Development','Backend Web Development', 'Programming languages', 'Others'],
-    ['Frontend Web Development', 'Programming languages'],
-    ['Frontend Web Development', 'Programming languages'],
+    'Frontend Web Development, Competitive Programming',
+	'App Development, Full Stack Web Development, Competitive Programming, and More...',
+    'App Development, Web Development, Competitive Programming, and More...',
+    'Frontend Web Development, Backend Web Development, Competitive Programming, and More...',
+    'Frontend Web Development',
+    'Frontend Web Development, Backend Web Development, Competitive Programming',
+    'Frontend Web Development, Backend Web Development, Competitive Programming, and More...',
+    'Frontend Web Development, Competitive Programming',
+    'Frontend Web Development, Competitive Programming',
   ];
 
   const skills = [
-    ['Android Studio, Java, Flutter', 'HTML, CSS, Javascript, NodeJs', 'C, C++, Python, Dart', 'Google Cloud'],
-    ['Flutter', 'HTML, CSS, Bootstrap', 'C, C++, Python, Dart, R', 'Machine Learning'],
-    ['HTML, CSS, Bootstrap, DOM', 'NodeJs, MongoDB, Javascript, JQuery', 'C, C++', 'Semantic-UI'],
-    ['HTML, CSS', 'C++'],
-    ['HTML, CSS, Javasript'],
-    ['HTML, CSS, Bootstrap','Javascript, JQuery, NodeJs, Express', 'C, C++, Python'],
-    ['Android Studio', 'HTML', 'JavaScript', 'CSS'],
-    ['Machine Learning', 'Flutter', 'HTML', 'CSS'],
-    ['HTML', 'CSS','JAVAscript', 'NodeJs'],
-    ['HTML, CSS, Bootstrap', 'JavaScript, NodeJs, ExpressJs, MySQL', 'C, C++', 'ORM (Sequelize)'],
-    ['HTML, CSS', 'C, C++'],
-    ['HTML, CSS','C, C++'],
+    'HTML, CSS, C++',
+	'Android Studio, Java, Flutter, HTML, CSS, Javascript, NodeJs, C, C++, Python, Dart, Google Cloud',
+    'Flutter, HTML, CSS, Bootstrap, C, C++, Python, Dart, R, Machine Learning',
+    'HTML, CSS, Bootstrap, DOM, NodeJs, MongoDB, Javascript, JQuery, C, C++, Semantic-UI',
+    'HTML, CSS, Javasript',
+    'HTML, CSS, Bootstrap, Javascript, JQuery, NodeJs, Express, C, C++, Python',
+    'Android Studio, HTML, JavaScript, CSS',
+    'Machine Learning, Flutter, HTML, CSS',
+    'HTML, CSS, JAVAscript, NodeJs',
+    'HTML, CSS, Bootstrap, JavaScript, NodeJs, ExpressJs, MySQL, C, C++, ORM (Sequelize)',
+    'HTML, CSS, C, C++',
+    'HTML, CSS, C, C++',
   ];
 
   const linkedin = [
-    'himeshnayak015',
+    'sarthak-khandelwal-bb2825194',
+	'himeshnayak015',
     'hareshnayak08',
     'parv-sharma-3ba3991a1',
-    'sarthak-khandelwal-bb2825194',
     'kshitij-garg-3b4229194',
     'harsh-goyal-195255b9',
     '',
@@ -111,10 +111,10 @@ const members = [
   ];
 
   const github = [
+    'HellVolhard07',
     'HimeshNayak',
     'hareshnayak',
     'PSCoder10462',
-    'HellVolhard07',
     'Kshitij-24',
     'harshgoyal7065',
     'rgtechno',
@@ -123,10 +123,10 @@ const members = [
   ];
 
   const email = [
+    'itsmevasu84',
     'himeshnayak015',
     'sketchharry01',
     'pscoder10462',
-    'itsmevasu84',
     'shitijgarg24',
     'harsh.student99',
     'rahulg1701s',
@@ -134,23 +134,87 @@ const members = [
     'dpdhruv123',
   ];
 
+const projectsHead = [
+	'goDev()\; Website',
+	'Heal App, goDev()\; App, goDev()\; Website, Techeez Clan App, Techeez Clan Website, POVS App, Chanakya Website', 
+	'Machine Learning Classification, Yoga Pose identification, goDev()\; App, Rock Paper Scissors, Heal App, Chanakya Website, goDev()\; Website',
+	'Chanakya Website, Pets App, goDev()\; Website',
+	'',
+	'goDev()\; Website',
+	'Expenser, goDev()\; Website',
+	'Library Data Management, goDev()\; Website',
+	'Tic Tac Toe,  goDev()\; Website '];
+  
 //=====================
 //  PORTFOLIO CARDS
 // =====================
+
 var portfs = document.getElementById("portf");
 for(var i=0; i<9; i++){
 
   portfs.innerHTML += '<div class="box">\
             <div class="icon col">\
-              <img src="images/'+ imageMember[i]'" alt="" class="col-sm-5 col-md-5 rounded-circle">\
+              <img src="images/' + imageMember[i]  + '" alt="" class="col-sm-5 col-md-5 rounded-circle">\
             </div>\
             <h5>'+ members[i] +'</h5>\
-            <h6>'+ membersPosition[i] +'</h6>\
+            <p>'+ skillsHead[i] +'</p>\
             <div class="overlay">\
-              <a href=""><span class="fa fa-address-card"></span></a>\
-              <h5>'+ skills[i] +'</h5>\
+              <span class="fa fa-address-card" onclick = "showCardOverlay('+ i +')"></span>\
+              <h4 style="color:white;">'+ skills[i] +'</h4>\
             </div>\
-          </div>'
+          </div>';
+}
+
+function showCardOverlay(i){
+  var card = document.getElementById("cardOverlay");
+	card.innerHTML += '\
+		<div class="wrapper">\
+		<div class="left">\
+			<img src="images/'+ imageMember[i] +'" alt="user" width="100">\
+			<h4>'+ members[i]+'</h4>\
+			<p>\
+			<ul>\
+				<li>'+ membersPosition[i] +'</li>\
+			</ul>\
+			</p>\
+			<div class="social_media">\
+				<ul>\
+					<li><a href="https://linkedin.com/in/'+ linkedin[i] +'"><i class="fab fa-linkedin"></i></a></li>\
+					<li><a href="https://github.com/'+ github[i] +'"><i class="fab fa-github"></i></a></li>\
+					<li><a href="mailto:'+ email[i] +'@gmail.com"><i class="fa fa-paper-plane"></i></a></li>\
+				</ul>\
+					<li><h5><button onclick="off()" style="background-color: #FEBD0A; color:white; border:none; border-radius:10px; margin="10px">Visit other Profiles</h5></button><li>\
+			</div>\
+		</div>\
+		<div class="right">\
+			<div class="info">\
+				<h3>Information</h3>\
+				<div class="info_data">\
+					<div class="data">\
+						<h4>Email</h4>\
+						<p>' + email[i] +'</p>\
+					</div>\
+					<div class="data">\
+						<h4>Github</h4>\
+						<p>'+ github[i] +'</p>\
+					</div>\
+					<div class="data">\
+						<h4>Linkedin</h4>\
+						<p>'+ linkedin[i] +'</p>\
+					</div>\
+				</div>\
+			</div>\
+			<div class="projects">\
+				<h3>Projects</h3>\
+					<h6 style="text-decoration:none;">'+ projectsHead[i] +'</h6>\
+			</div>\
+		</div>\
+		</div>';
+  document.getElementById("cardOverlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("cardOverlay").style.display = "none";
 }
 
 // ***************************************Adding to Firebase*******************************************************
