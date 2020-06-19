@@ -36,7 +36,7 @@ hamBurger.addEventListener("click",function(){
 
 //Members Data
 const members = [
-    'Sarhtak Khandelwal',    
+    'Sarthak Khandelwal',    
 	'Himesh Nayak',
     'Haresh Nayak',
     'Parv Sharma',
