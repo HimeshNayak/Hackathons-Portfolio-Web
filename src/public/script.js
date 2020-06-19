@@ -63,11 +63,11 @@ const members = [
     'sarthak.jpg',
 	'himesh.jpg',
     'haresh.jpg',
-    'parv.png',
-    'kshitij.png',
-    'harsh.png',
-    'rahul.png',
-    'shubham.png',
+    'parv.jpg',
+    'kshitij.jpg',
+    'harsh.jpg',
+    'rahul.jpg',
+    'shubham.jpg',
     'dhruv.jpg'
   ];
 
