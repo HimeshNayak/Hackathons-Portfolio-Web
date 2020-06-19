@@ -124,16 +124,17 @@ header .row{
     justify-content: space-between;
     align-items: center;
 }
-header .brand-name a{
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    color: white;
-    text-transform: uppercase;
-    position: relative;
+header .brand-name {
+    width: 149px;
+        height: 34px;
+        background: url('2.PNG') no-repeat;
+        display: inline-block;
 }
-header.fixed .brand-name a{
-    color: black;
+header.fixed .brand-name {
+    width: 149px;
+        height: 34px;
+        background: url('1.PNG') no-repeat;
+        display: inline-block;
 }
 header .navbar ul{
     list-style: none;
@@ -551,13 +552,13 @@ footer{
     padding: 60px 15px;
     background-color: #0c0c17;
 }
-footer .logoFooter{
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 45px;
-    color: white;
-    font-weight: 900;
+footer .logo{
+    margin-left: 425px;
+    margin-bottom: 20px;
+    width: 149px;
+        height: 34px;
+        background: url('2.PNG') no-repeat;
+        display: inline-block;
 }   
 footer .social{
     flex: 0 0 100%;
@@ -701,8 +702,11 @@ footer .social a:hover{
         background-color: white;
         border-bottom: 1px solid #eeeeee;
     }
-    header .brand-name a{
-        color: black;
+    header .brand-name {
+        width: 149px;
+        height: 34px;
+        background: url('1.PNG') no-repeat;
+        display: inline-block;
     }
     .ham-burger .fa{
         display: inline-block
