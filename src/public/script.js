@@ -127,7 +127,7 @@ const members = [
     'himeshnayak015',
     'sketchharry01',
     'pscoder10462',
-    'shitijgarg24',
+    'shitizgarg24',
     'harsh.student99',
     'rahulg1701s',
     'shubhamrawal2001',
