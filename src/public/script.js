@@ -36,7 +36,7 @@ hamBurger.addEventListener("click",function(){
 
 //Members Data
 const members = [
-    'Sarhtak Khandelwal',    
+    'Sarthak Khandelwal',    
 	'Himesh Nayak',
     'Haresh Nayak',
     'Parv Sharma',
@@ -232,3 +232,4 @@ const jskill= document.getElementById("joinSkill");
 const jexp= document.getElementById("joinExp");
 const jidea= document.getElementById("joinIdea");
 const sendJoin = document.getElementById("joinbutn");
+rt
