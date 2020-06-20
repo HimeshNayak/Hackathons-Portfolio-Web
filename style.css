@@ -88,7 +88,7 @@ body{
 .text-center{
     text-align: center!important;
 }
-.text-lwft{
+.text-left{
     text-align: left!important;
 }
 .text-right{
@@ -104,6 +104,7 @@ header{
     padding: 0px 15px;
     z-index: 10;
 }
+
 header.fixed{
     background-color: white;
     position: fixed;
@@ -124,17 +125,19 @@ header .row{
     justify-content: space-between;
     align-items: center;
 }
+
 header .brand-name {
-    width: 149px;
+    	width: 149px;
         height: 34px;
         background: url('2.PNG') no-repeat;
         display: inline-block;
 }
 header.fixed .brand-name {
-    width: 149px;
+    	width: 149px;
         height: 34px;
         background: url('1.PNG') no-repeat;
         display: inline-block;
+	
 }
 header .navbar ul{
     list-style: none;
@@ -153,6 +156,9 @@ header .navbar ul li a{
     display: block;
     font-weight: 600;
     position: relative;
+}
+header .navbar ul li a{
+	color: white;
 }
 header.fixed .navbar ul li a{
     color: black;
@@ -183,7 +189,7 @@ header .navbar ul li a.active::before{
     background-image: url("images/banner.jpg");
     background-size: cover;
     background-position: center;
-    padding: 15px;
+    padding: 10px;
 
 }
 .home .full-screen{
@@ -246,11 +252,130 @@ header .navbar ul li a.active::before{
     color: black;
 }
 
+/*About-Us*/
 
+.about-us{
+ background-image: linear-gradient(#242424,black);  
+ padding:100px 15px;
+ transition: all .5s ease;
+}
+
+.about-us .section-title{
+   flex:0 0 100%;
+   max-width: 100%; 
+   margin-bottom:40px;
+}
+
+.about-us .section-title h1{
+   display: inline-block;
+   font-size:40px;
+   text-transform: uppercase;
+   font-weight:700px;
+   color:white;
+   margin:0 0 10px;
+   position:relative;
+}
+
+.about-us .section-title h1:before{
+   content:'';
+   left:0;
+   position: absolute;
+   right:30%;
+   height:2px;
+   background-color:#febd01;
+   bottom:0px;
+
+}
+
+.text-uppercase{
+   text-transform: uppercase!important;
+}
+
+.about-us .section-title p.small{
+   display: block;
+   font-size: 20px;
+   color: #838383;
+   font-weight:400;
+   letter-spacing:2px;
+   text-transform: uppercase;
+}
+
+.about-us .about-content{
+ 
+}
+
+.about-us .about-content .text{
+   flex:0 0 66.66%;
+   max-width:66.66%;   
+}
+
+.about-us .about-content .text h4{
+   display:block;
+   font-size:28px;
+   font-weight:600;
+   margin:0 0 5px;
+   color:white;
+}
+
+.about-us .about-content .text h6{
+   display:block;
+   font-size:24px;
+   font-weight:500;
+   margin:0 0 15px;
+   color:white;
+}
+
+.about-us .about-content .text h6 span{
+   color:#febd01;
+}
+
+.about-us .about-content .text h6 span:hover{
+   transition: all .5s ease;
+   color:white;
+}
+
+.about-us .about-content .text p{
+   font-size:18px;
+   font-weight:400;
+   line-height:24px;
+   color:#838383;  
+}
+
+/*Quote1*/
+.quote-text1{
+    max-width:100%;
+    max-height:100%;
+    background-color: black;;
+    padding: 40px 15px;
+}
+
+.quote-text1 .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 278px;
+}
+.quote-text1 .text h2{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.quote-text1 .text h2 span{
+    color:#febd01;
+}
+
+.quote-text1 .text h2 span:hover{
+    transition: all .5s ease;
+    color:white;
+}
 /*Portfolios*/
 
 
 .portfolios{
+    margin:5px 0 0;
     background-color: #f5f8fd;
     padding: 130px 0px 70px;
 
