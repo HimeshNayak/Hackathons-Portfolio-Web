@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Template</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="User-Profile-Card-style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+  <!--Start Header-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="brand-name"></div>
+	<div class="ham-burger">
+          <i class="fa fa-bars"></i>
+       </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolios">Portfolios</a></li>
+            <li><a href="#projects">Our Works</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#join">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End Header-->
+  <!--Start Home-->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row full-screen">
+        <div class="home-content">
+          <div class="block">
+            <h6>Let's come together as</h6>
+            <img src="images/logobb.png" id="logoBanner">
+            <h3>Build projects and gain experience by working together</h3>
+            <div class="joinus-btn">
+              <a href="#join">Join as a Developer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Home-->
+
+<!--Start About-->
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+	  <h1>About Us</h1>
+	  <p class="small">Our Vision</p>
+	</div>
+      </div>
+     <div class="row">
+	<div class="about-content">
+	  <div class="row">
+	    <div class="text" id="transitioneffect">
+	      <h4>The GoDev Developer Community</h4>
+	      <h6><span>Together</span> we build, <span>Together</span> we grow.</h6>
+	      <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler<br><br>
+
+We here at GoDev, aspire to build a community that works together to create, innovate and express their ideas through the beautiful language of code. Here, you can meet and interact with fellow developers, present your ideas and build up projects together as a team. To share knowledge is possibly the best gift given to mankind. GoDev provides you with immense opportunities that you cannot miss! 
+<br><br>
+We are also open to recruiters who are looking for skilled developers to work with.<br><br>
+
+ If you're also a developer and like to share your ideas, we would love to hear you out  :)<br><br>
+Join Us today!</p>
+	    </div>
+	  </div>
+	</div>
+     </div>
+    </div>
+
+  </section>
+<!--End About-->
+
+<!--Start Quote1-->
+  <section class="quote-text1">
+    <div class="container">
+      <div class="row">
+        <div class="text">
+          <h2 align="center">Enter a world full of <span>oppurtunities</span></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Quote1-->
+
+  <!--Start Portfolios-->
+  <section class="portfolios" id="portfolios">
+    <div class="container">
+      <div class="row col-sm-12 col-md-12">
+        <div class="section-title text-center">
+          <h1 align="center">Portfolios</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-content" id="portf">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wrapper" id="cardOverlay"></div>
+  <!--End Portfolios-->
+  <!--Start Quote2-->
+  <section class="quote-text">
+    <div class="container">
+      <div class="row">
+        <div class="text">
+          <h2>Talk is cheap. Show me the code.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Quote2-->
+  <!--Start Our works-->
+ <section class="works" id="projects">
+     <div class="container">
+         <div class="row">
+             <div class="section-title text-center">
+                 <h1>Together We Grow</h1>
+             </div>
+         </div>
+         <div class="row">
+             <div class="works-content">
+                 <div class="box">
+                     <div class="image">
+                         <img src="images/hashcode.jpg" alt="work" /><!--360*240-->
+                     </div>
+                     <div class="info">
+                         <span>21 February, 2020</span> <span>Friday</span>
+                     </div>
+                     <h3>Google Hash Code</h3>
+                     <p>Participated together as a team in Google Hash Code secured a decent rank.</p>
+                 </div>
+                 <div class="box">
+                    <div class="image">
+                        <img src="images/gd.png" alt="work" /><!--360*240-->
+                    </div>
+                    <div class="info">
+                        <span>2 March, 2020</span> <span>Monday</span>
+                    </div>
+                    <h3>Group Discussion</h3>
+                    <p>Discussuion about the various technologies and services of GMAFIA (Google, Microsoft, Amazon, Facebook, IBM, Apple)</p>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/logoblack.jpg" alt="work" /><!--360*240-->
+                    </div>
+                    <div class="info">
+                        <span>19 June, 2020</span><span>Friday</span>
+                    </div>
+                    <h3>GoDev(); Website Launch</h3>
+                    <p>Built a website together to showcase our skills and invite others to come together and grow together.</p>
+                </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!--End Our works-->
+  <!--Start Contact Us-->
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h1>Get in touch</h1>
+        </div>
+      </div>
+	  <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSduMR6Jn_4fcoFDkua95b_QcALgUYfZIuW2yUXqHnXYRCcNgg/formResponse">
+      <div class="row">
+        <div class="contact-form">
+          <div class="row">
+            <div class="text">
+              <h2>Drop us a line</h2>
+              <p>We are here to answer any question you may have</p>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="col-6">
+              <input type="text" class="form-control" id="fullName" placeholder="Name" required="" name="entry.1313864082">
+            </div>
+            <div class="col-6">
+              <input type="email" class="form-control" id="fullEmail" placeholder="E-mail" required="" name="entry.1778805816">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <textarea class="form-control" id="mess" placeholder="Your comment here" required="" name="entry.1985885495"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button text-right">
+              <button id="submit">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </form>
+    </div>
+  </section>
+  <!--End Contact Us-->
+
+  <!--Start Join Us-->
+  <section class="join-us" id="join">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h1>Join Us</h1>
+        </div>
+      </div>
+	  <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScixfk5gy61t2EAex_chiqr25afxIe7JXmdtn-VBxHjm-St1Q/formResponse">
+      <div class="row">
+        <div class="join-form">
+          <div class="row space-between">
+            <div class="col-6">
+              <input type="text" class="form-control" id="joinName" placeholder="Name" name="entry.1840683356" required="">
+            </div>
+            <div class="col-6">
+              <input type="email" class="form-control" id="joinEmail" placeholder="E-mail" name="entry.1668391196" required="">
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="col-6">
+              <input type="text" class="form-control" id="joinGit" placeholder="Link to Github account" name="entry.1072949904">
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" id="joinLink" placeholder="Link to Linkedin account" name="entry.1072949904">
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" id="joinSkill" placeholder="Skill Set" name="entry.1196312592"></textarea>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" id="joinExp" name="entry.1196312592"
+                placeholder="Any projects you have worked upon earlier (Provide link to the code too)" name="entry.925209188"></textarea>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" id="joinIdea" name="entry.2041028547"
+                placeholder="If you already have an idea but collaborate as a group. We will provide you more people to work with. (A rough idea about your project)."></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button text-right">
+              <button id="submit">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </form>
+    </div>
+  </section>
+  <!--End Join Us-->
+  <!--Start Footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="logo"></div>
+        <div class="social">
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+  <!--Start copyright-->
+  <section class="copyright">
+    <div class="container">
+      <p>&copy; 2020 copyright all rights reserved</p>
+    </div>
+  </section>
+  <!--End copyright-->
+<script src="script.js"></script>
+</body>
+
+</html>
