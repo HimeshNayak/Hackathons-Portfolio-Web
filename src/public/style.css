@@ -258,7 +258,8 @@ header .navbar ul li a.active::before{
 
 .about-us{
  background-image: linear-gradient(#242424,black);  
- padding:100px 15px;
+ padding-top: 100px;
+ padding-bottom: 40px;
  transition: all .5s ease;
 }
 
