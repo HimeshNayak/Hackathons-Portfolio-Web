@@ -129,13 +129,13 @@ header .row{
 header .brand-name {
     	width: 149px;
         height: 34px;
-        background: url('2.PNG') no-repeat;
+        background: url('images/2.PNG') no-repeat;
         display: inline-block;
 }
 header.fixed .brand-name {
     	width: 149px;
         height: 34px;
-        background: url('1.PNG') no-repeat;
+        background: url('images/1.PNG') no-repeat;
         display: inline-block;
 	
 }
@@ -830,7 +830,7 @@ footer .social a:hover{
     header .brand-name {
         width: 149px;
         height: 34px;
-        background: url('1.PNG') no-repeat;
+        background: url('images/1.PNG') no-repeat;
         display: inline-block;
     }
     .ham-burger .fa{
