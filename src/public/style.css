@@ -258,7 +258,8 @@ header .navbar ul li a.active::before{
 
 .about-us{
  background-image: linear-gradient(#242424,black);  
- padding:100px 15px;
+ padding-top: 100px;
+ padding-bottom: 40px;
  transition: all .5s ease;
 }
 
@@ -280,9 +281,9 @@ header .navbar ul li a.active::before{
 
 .about-us .section-title h1:before{
    content:'';
-   left:0;
+   left:9px;
    position: absolute;
-   right:30%;
+   right:51%;
    height:2px;
    background-color:#febd01;
    bottom:0px;
@@ -869,6 +870,21 @@ footer .social a:hover{
         width: 100%;
         left: 0;
         bottom: -1px;
+    }
+	.about-us .section-title h1{
+        padding-left: 10px;
+    }
+    .about-us .section-title p.small{
+        padding-left: 15px;
+    }
+    .about-us .about-content .text h4{
+        padding-left: 20px;
+    }
+    .about-us .about-content .text h6{
+        padding-left: 20px;
+    }
+    .about-us .about-content .text p{
+        padding-left: 20px;
     }
     .portfolios .portfolio-content .box{
         background-color: white;
