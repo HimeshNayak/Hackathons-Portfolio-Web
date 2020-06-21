@@ -2,7 +2,7 @@ window.onscroll=function(){
     const docScrollTop=document.documentElement.scrollTop;
 
     if(window.innerWidth>991){
-        if(docScrollTop>1200){
+        if(docScrollTop>500){
             document.querySelector("header").classList.add("fixed");
         }
         else{
