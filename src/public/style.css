@@ -179,10 +179,12 @@ header.fixed .navbar ul li a::before{
 header .navbar ul li a:hover::before{
     width: 100%;
     left: 0;
+    bottom: -9px;
 }
 header .navbar ul li a.active::before{
     width: 100%;
     left: 0;
+    bottom: -9px;
 }
 .home{
     min-height: 100vh;
@@ -860,6 +862,14 @@ footer .social a:hover{
     header .navbar ul li a::before{
         background-color: #febd01;
     }
+    header .navbar ul li a.active::before{
+        bottom: -1px;
+    }
+    header .navbar ul li a:hover::before{
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+    }
     .portfolios .portfolio-content .box{
         background-color: white;
         padding: 30px;
@@ -889,4 +899,24 @@ footer .social a:hover{
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
+}
+
+
+button:not(:disabled){
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: #febd01;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px #e8e8e8;
+}
+button:hover:not(:disabled){  
+    background-color: black;
+    color: white;
 }
