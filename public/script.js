@@ -88,7 +88,7 @@ const members = [
   const skills = [
     'HTML, CSS, C++',
 	'Android Studio, Java, Flutter, HTML, CSS, Javascript, NodeJs, C, C++, Python, Dart, Google Cloud',
-    'Flutter, HTML, CSS, Bootstrap, C, C++, Python, Dart, R, Machine Learning',
+    'Android Stuio, TensorFlow, Flutter, HTML, CSS, Bootstrap, C, C++, Python, Dart, R, Machine Learning',
     'HTML, CSS, Bootstrap, DOM, NodeJs, MongoDB, Javascript, JQuery, C, C++, Semantic-UI',
     'HTML, CSS, Javasript',
     'HTML, CSS, Bootstrap, Javascript, JQuery, NodeJs, Express, C, C++, Python',
@@ -141,7 +141,7 @@ const projectsHead = [
 	'Heal App, goDev()\; App, goDev()\; Website, Techeez Clan App, Techeez Clan Website, POVS App, Chanakya Website', 
 	'Machine Learning Classification, Yoga Pose identification, goDev()\; App, Rock Paper Scissors, Heal App, Chanakya Website, goDev()\; Website',
 	'Chanakya Website, Pets App, goDev()\; Website',
-	'',
+	'goDev()\; Website',
 	'goDev()\; Website',
 	'Expenser, goDev()\; Website',
 	'Library Data Management, goDev()\; Website',
@@ -183,7 +183,7 @@ function showCardOverlay(i){
 				<ul>\
 					<li><a href="https://linkedin.com/in/'+ linkedin[i] +'"><i class="fab fa-linkedin"></i></a></li>\
 					<li><a href="https://github.com/'+ github[i] +'"><i class="fab fa-github"></i></a></li>\
-					<li><a href="mailto:'+ email[i] +'@gmail.com"><i class="fa fa-paper-plane"></i></a></li>\
+					<li><a href="mailto:'+ email[i] +'@gmail.com"><i class="fa fa-envelope"></i></a></li>\
 				</ul>\
 					<li><h5><button onclick="off()" style="background-color: #FEBD0A; color:white; border:none; border-radius:10px; margin="10px">Visit other Profiles</h5></button><li>\
 			</div>\
@@ -193,22 +193,20 @@ function showCardOverlay(i){
 				<h3>Information</h3>\
 				<div class="info_data">\
 					<div class="data">\
-						<h4>Email</h4>\
-						<p>' + email[i] +'</p>\
-					</div>\
-					<div class="data">\
-						<h4>Github</h4>\
-						<p>'+ github[i] +'</p>\
-					</div>\
-					<div class="data">\
 						<h4>Linkedin</h4>\
 						<p>'+ linkedin[i] +'</p>\
+						<h4>Gmail</h4>\
+						<p>'+ email[i] +'@gmail.com</p>\
+						</div>\
+						<div class="data">\
+						<h4>Github</h4>\
+						<p>'+ github[i] +'</p>\
 					</div>\
 				</div>\
 			</div>\
 			<div class="projects">\
 				<h3>Projects</h3>\
-					<h6 style="text-decoration:none;">'+ projectsHead[i] +'</h6>\
+					<h6 style="text-decoration:none; word-spacing: 10px; line-height:1.8;">'+ projectsHead[i] +'</h6>\
 			</div>\
 		</div>\
 		</div>';
