@@ -351,7 +351,6 @@ header .navbar ul li a.active::before{
 .quote-text1 .text{
     color: white;
     max-width: 100%;
-    margin-left: 278px;
 }
 .quote-text1 .text h2{
     font-size: 25px;
@@ -360,6 +359,7 @@ header .navbar ul li a.active::before{
     margin: 0;
     padding: 0;
     line-height: 40px;
+	text-align: center;
 }
 
 .quote-text1 .text h2 span{
@@ -505,9 +505,9 @@ header .navbar ul li a.active::before{
 .quote-text .text{
     color: white;
     max-width: 100%;
-    margin-left: 325px;
 }
 .quote-text .text h2{
+	text-align:center;
     font-size: 25px;
     color: white;
     font-weight: 700;
