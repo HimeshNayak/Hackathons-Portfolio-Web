@@ -19,7 +19,31 @@ body{
     margin: 0;
 }
 
- 
+@media all and (max-width: 700px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+	#logoBanner{
+		height:100px;
+	}
+} 
+
+@media all and (max-width: 500px) 
+{
+    .quote-text .text{
+    color: white;
+    max-width: 100%;
+    margin-left: 325px;
+    visibility: hidden;
+    }
+	#logoBanner{
+		height:100px;
+	}
+} 
 
 .WebContainer{
     width: 100%; 
@@ -52,7 +76,6 @@ body{
     margin: 0 0 10px;
     position: relative;
 }
-
 .section-title h1:before{
     content: '';
     left: 0;
@@ -60,24 +83,6 @@ body{
     height: 2px;
     right: 30%;
     background-color: #febd01;
-    bottom: 0px;
-}
-.section-title h2{
-    display: inline-block;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-    margin: 0 0 10px;
-    position: relative;
-}
-
-.section-title h2:before{
-    content: '';
-    left: 0;
-    position: absolute;
-    height: 2px;
-    right: 30%;
     bottom: 0px;
 }
 .text-center{
@@ -124,13 +129,13 @@ header .row{
 header .brand-name {
     	width: 149px;
         height: 34px;
-        background: url('images/2.png') no-repeat;
+        background: url('images/2.PNG') no-repeat;
         display: inline-block;
 }
 header.fixed .brand-name {
     	width: 149px;
         height: 34px;
-        background: url('images/1.png') no-repeat;
+        background: url('images/1.PNG') no-repeat;
         display: inline-block;
 	
 }
@@ -153,7 +158,7 @@ header .navbar ul li a{
     position: relative;
 }
 header .navbar ul li a{
-	
+	color: white;
 }
 header.fixed .navbar ul li a{
     color: black;
@@ -169,13 +174,12 @@ header .navbar ul li a::before{
     transition: all .5s ease;
 }
 header.fixed .navbar ul li a::before{
-    
+    background-color: #febd01;
 }
 header .navbar ul li a:hover::before{
     width: 100%;
     left: 0;
     bottom: -9px;
-	background-color: #febd01;
 }
 header .navbar ul li a.active::before{
     width: 100%;
@@ -351,6 +355,7 @@ header .navbar ul li a.active::before{
 .quote-text1 .text{
     color: white;
     max-width: 100%;
+    margin-left: 278px;
 }
 .quote-text1 .text h2{
     font-size: 25px;
@@ -359,7 +364,6 @@ header .navbar ul li a.active::before{
     margin: 0;
     padding: 0;
     line-height: 40px;
-	text-align: center;
 }
 
 .quote-text1 .text h2 span{
@@ -376,7 +380,7 @@ header .navbar ul li a.active::before{
 .portfolios{
     margin:5px 0 0;
     background-color: #f5f8fd;
-    padding: 65px 0px 70px;
+    padding: 130px 0px 70px;
 
 }
 .portfolios .section-title h1::before{
@@ -505,9 +509,9 @@ header .navbar ul li a.active::before{
 .quote-text .text{
     color: white;
     max-width: 100%;
+    margin-left: 325px;
 }
 .quote-text .text h2{
-	text-align:center;
     font-size: 25px;
     color: white;
     font-weight: 700;
@@ -602,7 +606,7 @@ header .navbar ul li a.active::before{
 
 /*Join-Us*/
 .join-us{
-    padding: 0px 15px;
+    padding: 130px 15px;
     background-color: #f5f8fd;
 }
 .join-us .section-title h1:before{
@@ -677,10 +681,12 @@ footer{
     background-color: #0c0c17;
 }
 footer .logo{
-	margin-left: 425px;
+    margin-left: 425px;
     margin-bottom: 20px;
-	width: 90%;
-    display: inline-block;
+    width: 149px;
+        height: 34px;
+        background: url('images/2.png') no-repeat;
+        display: inline-block;
 }   
 footer .social{
     flex: 0 0 100%;
@@ -827,7 +833,7 @@ footer .social a:hover{
     header .brand-name {
         width: 149px;
         height: 34px;
-        background: url('images/1.png') no-repeat;
+        background: url('images/1.PNG') no-repeat;
         display: inline-block;
     }
     .ham-burger .fa{
@@ -929,37 +935,4 @@ button:not(:disabled){
 button:hover:not(:disabled){  
     background-color: black;
     color: white;
-}
-
-
-@media all and (max-width: 700px) 
-{
-    .quote-text .text{
-    color: white;
-    max-width: 100%;
-    margin-left: 325px;
-    visibility: hidden;
-    }
-	#logoBanner{
-		height:100px;
-	}
-	footer .logo{
-		margin-left: 100%;
-	}
-} 
-
-@media all and (max-width: 500px) 
-{
-    .quote-text .text{
-    color: white;
-    max-width: 100%;
-    margin-left: 325px;
-    visibility: hidden;
-    }
-	#logoBanner{
-		height:60px;
-	}
-	footer .logo{
-		margin-left: 35%;
-	}
 }
