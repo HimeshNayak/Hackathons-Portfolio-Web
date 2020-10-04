@@ -14,11 +14,11 @@ This website is built with HTML, CSS and Javascript and Google Sheets as a backe
 ### To run on your system
 
 ```
-0. Download and install nodeJs on your system 
-1. Clone / Pull 
-2. In terminal of Project in VS Code run commands -
+1. Download and install nodeJs on your system 
+2. Clone / Pull 
+3. In terminal of Project in VS Code run commands -
    - npm install
    - cd src
    - node server.js
-3. Click on Link http://localhost:4545
+4. Click on Link http://localhost:4545
 ```
