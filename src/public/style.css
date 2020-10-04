@@ -380,7 +380,7 @@ header .navbar ul li a.active::before{
 .portfolios{
     margin:5px 0 0;
     background-color: #f5f8fd;
-    padding: 130px 0px 70px;
+    padding: 100px 0px 70px;
 
 }
 .portfolios .section-title h1::before{
@@ -522,7 +522,7 @@ header .navbar ul li a.active::before{
 
 /*Contact-Us*/
 .contact-us{
-    padding-top: 130px;
+    padding: 100px 15px;
     background-color: #f5f8fd;
 }
 .contact-us .section-title h1:before{
@@ -606,7 +606,7 @@ header .navbar ul li a.active::before{
 
 /*Join-Us*/
 .join-us{
-    padding: 130px 15px;
+    padding: 100px 15px;
     background-color: #f5f8fd;
 }
 .join-us .section-title h1:before{
@@ -677,7 +677,7 @@ header .navbar ul li a.active::before{
 
 /*Footer*/
 footer{
-    padding: 60px 15px;
+    padding: 80px 15px;
     background-color: #0c0c17;
 }
 footer .logo{
@@ -722,7 +722,7 @@ footer .social a:hover{
 
 /*Our works*/
 .works{
-    padding: 130px 15px;
+    padding: 100px 15px;
     background-color: white;
 }
 .works .section-title h1:before{
