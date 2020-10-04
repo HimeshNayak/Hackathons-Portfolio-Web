@@ -1,5 +1,5 @@
 # Hackathons-Portfolio-Web
-
+## An initiative to bring together devs
 ### To run on your system
 
 ```
