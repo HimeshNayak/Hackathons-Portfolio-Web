@@ -20,5 +20,5 @@ This website is built with HTML, CSS and Javascript and Google Sheets as a backe
    - npm install
    - cd src
    - node server.js
-4. Click on Link http://localhost:4545
+4. Click on Link http://localhost:4545 (or the local host that node provides you with)
 ```
