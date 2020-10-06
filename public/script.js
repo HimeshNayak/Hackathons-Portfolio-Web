@@ -47,12 +47,14 @@ const members = [
     'Rahul Gandhi',
     'Shubham Rawal',
     'Dhruv Pasricha',
+    'Apoorva Aggarwal'
   ];
 
   const membersPosition = [
     'Web Developer',
 	'App Developer',
     'ML Enthusiast',
+    'Web Developer',
     'Web Developer',
     'Web Developer',
     'Web Developer',
@@ -70,7 +72,8 @@ const members = [
     'harsh.jpg',
     'rahul.jpg',
     'shubham.jpg',
-    'dhruv.jpg'
+    'dhruv.jpg',
+    'Apoorva.jpeg'
   ];
 
   const skillsHead = [
@@ -83,6 +86,7 @@ const members = [
     'Frontend Web Development, Backend Web Development, Competitive Programming, and More...',
     'Frontend Web Development, Competitive Programming',
     'Frontend Web Development, Competitive Programming',
+    'Frontend Web Development, Backend Web Development'
   ];
 
   const skills = [
@@ -95,6 +99,7 @@ const members = [
     'HTML, CSS, Bootstrap, JavaScript, NodeJs, ExpressJs, MySQL, C, C++, ORM (Sequelize)',
     'HTML, CSS, C, C++',
     'HTML, CSS, C, C++',
+    'HTML, CSS, C, C++, Python, JavaScript, NodeJS, Express, JQuery, Bootstrap'
   ];
 
   const linkedin = [
@@ -107,6 +112,7 @@ const members = [
     '',
     'shubham-rawal-1195371a8',
     'dhruvpasricha',
+    'apoorva-aggarwal-a60810194'
   ];
 
   const github = [
@@ -119,6 +125,7 @@ const members = [
     'rgtechno',
     'shubham-rawal',
     'dhruv-pasricha',
+    'Apoorva110032'
   ];
 
   const email = [
@@ -131,6 +138,7 @@ const members = [
     'rahulg1701s',
     'shubhamrawal2001',
     'dpdhruv123',
+    'apoorva27sep'
   ];
 
 const projectsHead = [
@@ -142,14 +150,16 @@ const projectsHead = [
 	'goDev()\; Website',
 	'Expenser, goDev()\; Website',
 	'Library Data Management, goDev()\; Website',
-	'Tic Tac Toe,  goDev()\; Website '];
-  
+  'Tic Tac Toe,  goDev()\; Website ',
+  'goDev()\; Website'
+];
+
 //=====================
 //  PORTFOLIO CARDS
 // =====================
 
 var portfs = document.getElementById("portf");
-for(var i=0; i<9; i++){
+for(var i=0; i<10; i++){
 
   portfs.innerHTML += '<div class="box">\
             <div class="icon col">\
