@@ -929,3 +929,60 @@ button:hover:not(:disabled){
     background-color: black;
     color: white;
 }
+
+.icon {
+    text-decoration: none;
+    position: relative;
+}
+
+.social a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: 0;
+    display: inline-block;
+    transition: border-color 0.2s ease-in-out;
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    color: inherit;
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+    transition: all 0.2s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    border-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border: solid 1px #fff;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: block;
+    font-size: 1.75em;
+    height: 2.5em;
+    line-height: 2.5em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 2.5em;
+ }
